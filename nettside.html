@@ -25,11 +25,12 @@
 
 	</head>	
 <body>
-<h1>Dette er min første nettside.</h1>
+<h1 id="overskrift" onclick="endreTekst()">Trykk på meg!</h1>
 <script>
-    alert('Hei på deg!');
+    function endreTekst() {
+        document.getElementById('overskrift').innerHTML = 'Takk :-)';
+    }
 </script>
-
 <div>Den skal bli kjempefin.</div>
 
 <div class="specialEffect">Her kan du finne min kode, som er open source. Det kommer til å bli så bra.</div>
